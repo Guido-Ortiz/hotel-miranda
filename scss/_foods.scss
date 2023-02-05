@@ -1,0 +1,117 @@
+.foods {
+    border: 1px solid red;
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .food--icon {
+        float: right;
+    }
+
+    h3 {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.8px;
+        text-transform: uppercase;
+        color: $secondary;
+        margin-top: 120px;
+        margin-bottom: 24px;
+    }
+
+    h1 {
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        color: #222222;
+        text-transform: capitalize;
+        margin-bottom: 36px;
+    }
+
+
+
+    .food--container {
+        // border: 1px solid darkcyan;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 16px;
+        width: 100%;
+        height: 150px;
+
+        .img--container {
+            // border: 1px solid fuchsia;
+            width: 120%;
+            // height: 120px;
+        }
+
+        .img {
+            // border: 1px solid red;
+            width: 100%;
+            height: 100%;
+            // height: 140%;
+        }
+
+        .food--text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    }
+
+    .food--title {
+        font-family: 'Old Standard TT';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: -0.72px;
+        color: #222222;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .food--subtitle {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #222222;
+        padding-left: 20px;
+    }
+
+    .food--arrows {
+        // border: 1px solid darkmagenta;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 36px;
+
+        .arrow {
+            // border: 1px solid red;
+            width: 36px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .arrow--back {
+            background: #F8F8F8;
+            margin-right: 16px;
+        }
+
+        .arrow--next {
+            background: $primary;
+            color: #ffffff;
+            box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.15);
+        }
+    }
+}

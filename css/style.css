@@ -223,22 +223,346 @@ header .btn--dark {
   letter-spacing: 2.8px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-bottom: 175px;
+  margin-bottom: 45px;
 }
-.about .about--img {
-  border: 1px solid red;
+
+.about--items .about--img {
   width: 270px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.about--items .about--img div {
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(34, 34, 34, 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.about--items .about--img div .team {
+  width: 68px;
+  height: 50px;
+  margin-top: 54px;
+}
+.about--items .about--img div h2 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  color: #111111;
+  margin-top: 29px;
+  margin-bottom: 21px;
+  text-transform: capitalize;
+}
+.about--items .about--img div p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #111111;
+}
+.about--items .about--img .img {
+  width: 100%;
+  height: 80%;
+}
+.about--items .about--img .about--dark {
+  padding: 0;
+  background: #222222;
+  padding-bottom: 30px;
+}
+.about--items .about--img .about--dark h2, .about--items .about--img .about--dark p {
+  color: #FFFFFF;
+}
+
+.rooms {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rooms h4 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+  margin-bottom: 24px;
+}
+.rooms h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: -1.2px;
+  color: #222222;
+  margin-bottom: 24px;
+}
+.rooms .room--icons {
+  height: 40px;
+  width: 256px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.rooms .room--icons img {
+  width: 12px;
+  height: 8.18px;
+}
+.rooms h3 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -1.2px;
+  color: #222222;
+  margin: 12px 0;
+}
+.rooms p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #777777;
+  margin-bottom: 12px;
+}
+.rooms .room--price {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  color: #BEAD8E;
+}
+.rooms .room--price span {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.video {
+  margin-top: 49px;
+  background: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
+  padding-top: 64px;
+}
+.video h3 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #BDAC8D;
+  margin-bottom: 32px;
+}
+.video h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.video p {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #C2C2C2;
+  margin-bottom: 32px;
+}
+.video button {
+  width: 216px;
+  height: 60px;
+  background: #BDAC8D;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+  margin-bottom: 48px;
+}
+
+.facilities {
+  border: 1px solid red;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
 }
-.about .about--img .img {
+.facilities h3 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+}
+.facilities h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #222222;
+  margin-top: 24px;
+}
+
+.foods {
+  border: 1px solid red;
+  margin-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.foods .food--icon {
+  float: right;
+}
+.foods h3 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+  margin-top: 120px;
+  margin-bottom: 24px;
+}
+.foods h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #222222;
+  text-transform: capitalize;
+  margin-bottom: 36px;
+}
+.foods .food--container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
   width: 100%;
-  height: 80%;
+  height: 150px;
 }
-.about .about--img .team {
-  width: 68px;
-  height: 50px;
+.foods .food--container .img--container {
+  width: 120%;
+}
+.foods .food--container .img {
+  width: 100%;
+  height: 100%;
+}
+.foods .food--container .food--text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.foods .food--title {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+  color: #222222;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.foods .food--subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #222222;
+  padding-left: 20px;
+}
+.foods .food--arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 36px;
+}
+.foods .food--arrows .arrow {
+  width: 36px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.foods .food--arrows .arrow--back {
+  background: #F8F8F8;
+  margin-right: 16px;
+}
+.foods .food--arrows .arrow--next {
+  background: #BEAD8E;
+  color: #ffffff;
+  box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.15);
+}
+
+.numbers {
+  border: 1px solid red;
+  margin-top: 91px;
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #222222;
+}
+.numbers div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.numbers h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 136.4%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.numbers h5 {
+  color: #BEAD8E;
+  text-transform: capitalize;
+}
+.numbers .numbers--description {
+  margin-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
