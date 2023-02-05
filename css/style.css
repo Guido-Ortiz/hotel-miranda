@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+}
+
+.home {
+  background: #BEAD8E;
+}
+
+nav {
+  height: 70px;
+  width: 100vw;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav .menu {
+  margin-left: 10px;
+}
+nav .navbar--container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar--header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 32px;
+  margin-right: 13px;
+}
+nav .navbar--header .logo {
+  background: #FFFFFF;
+  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.25);
+  height: 36px;
+  width: 36px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+nav .navbar--header .navbar--title {
+  margin-left: 13px;
+}
+nav .navbar--icons {
+  width: auto;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav .navbar--icons .group {
+  margin-right: 24px;
+}
+
+header {
+  background: #333333;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 75px 0 75px 20px;
+}
+header p {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+header h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #FFFFFF;
+  margin: 40px 0;
+  text-transform: capitalize;
+}
+header .header--btn {
+  height: 60px;
+  width: 217px;
+  background: #BEAD8E;
+  border: none;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+header .btn--dark {
+  margin-top: 24px;
+  background: #333333;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+}
+
+.arrival {
+  background: #222222;
+  height: auto;
+  padding: 36px 0 36px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.arrival h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.arrival input {
+  margin-bottom: 30px;
+  padding: 14px 0;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+  color: #686868;
+  width: 90%;
+}
+.arrival input[type=date]::-webkit-calendar-picker-indicator, .arrival input[type=time]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  color: #BEAD8E;
+  filter: invert(0.9);
+}
+.arrival button {
+  width: 250px;
+  height: 60px;
+  margin-top: 12px;
+  background: #BEAD8E;
+  border: none;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.about {
+  margin-top: 60px;
+  background: #F9F9F9;
+}
+.about .about--container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+.about .about--container h3 {
+  margin-top: 38px;
+  margin-bottom: 32px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+}
+.about .about--container h1 {
+  width: 100%;
+  margin-bottom: 16px;
+  padding-right: 20px;
+  text-transform: capitalize;
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 51px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #111111;
+}
+.about .about--container p {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 24px;
+}
+.about .about--container button {
+  background: #BEAD8E;
+  border: none;
+  width: 216px;
+  height: 60px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 175px;
+}
+.about .about--img {
+  border: 1px solid red;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.about .about--img .img {
+  width: 100%;
+  height: 80%;
+}
+.about .about--img .team {
+  width: 68px;
+  height: 50px;
+}/*# sourceMappingURL=style.css.map */
