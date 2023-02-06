@@ -439,7 +439,6 @@ header .btn--dark {
 }
 
 .foods {
-  border: 1px solid red;
   margin-top: 60px;
   padding-left: 20px;
   padding-right: 20px;
@@ -535,7 +534,6 @@ header .btn--dark {
 }
 
 .numbers {
-  border: 1px solid red;
   margin-top: 91px;
   padding: 48px 0;
   display: flex;
@@ -565,4 +563,153 @@ header .btn--dark {
 }
 .numbers .numbers--description {
   margin-bottom: 60px;
+}
+
+footer {
+  margin-top: 60px;
+  padding-left: 22px;
+  background-size: cover;
+}
+footer .footer--header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+footer .footer--header div {
+  width: 80px;
+  height: 80px;
+  background: #BEAD8E;
+  box-shadow: 0px 14px 24px rgba(139, 139, 139, 0.15);
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 43px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 28px;
+}
+footer p {
+  margin-top: 47px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  line-height: 149%;
+  vertical-align: top;
+  color: #777777;
+}
+footer .footer--icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+footer .footer--icons img {
+  width: 24px;
+  height: 24px;
+}
+footer .footer--services h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 48px;
+  color: #777777;
+  margin-top: 40px;
+}
+footer .footer--services div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+footer .footer--services div h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 48px;
+  color: #777777;
+  margin-right: 10px;
+}
+footer .footer--contact {
+  margin-top: 32px;
+}
+footer .footer--contact h3 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #222222;
+  text-transform: capitalize;
+  margin-bottom: 34px;
+}
+footer .footer--contact .footer--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+}
+footer .footer--contact .footer--container img {
+  width: 40px;
+  height: 40px;
+  margin-right: 22px;
+}
+footer .footer--contact .footer--container .footer--info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+footer .footer--contact .footer--container .footer--info h4 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #777777;
+}
+footer .footer--contact .footer--container .footer--info h6 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #777777;
+}
+
+.footer--copyright {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 16px;
+  background: #F8F8F8 !important;
+}
+.footer--copyright h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.48px;
+  color: #222222;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.footer--copyright h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.48px;
+  color: #222222;
+  margin-bottom: 16px;
 }/*# sourceMappingURL=style.css.map */
