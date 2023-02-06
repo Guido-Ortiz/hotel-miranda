@@ -1,0 +1,90 @@
+.availability {
+    // border: 1px solid red;
+    padding: 20px 40px;
+
+    h3 {
+        font-family: 'Archivo';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: -0.54px;
+        color: #222222;
+        margin-bottom: 26px;
+    }
+
+    .availability--container {
+        // border: 1px solid forestgreen;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+
+        div {
+            // border: 1px solid salmon;
+            // width: 100%;
+            min-width: 220px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin-bottom: 19px;
+            margin-right: 20px;
+
+            h4 {
+                margin-bottom: 13px;
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 15px;
+                text-align: right;
+                color: #222222;
+            }
+
+            input {
+                min-width: 200px;
+                ;
+                height: 60px;
+                background: #F8F8F8;
+                font-family: 'Archivo';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 15px;
+                text-align: center;
+                color: $secondary;
+                border: none;
+            }
+
+        }
+
+        button {
+            min-width: 220px;
+            height: 60px;
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 15px;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background: #BEAD8E;
+            border: none;
+
+        }
+    }
+
+    p {
+        margin-top: 48px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $secondary;
+
+    }
+}
