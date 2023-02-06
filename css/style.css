@@ -69,7 +69,6 @@ nav .navbar--icons .group {
 
 header {
   background: #333333;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -712,4 +711,219 @@ footer .footer--contact .footer--container .footer--info h6 {
   letter-spacing: -0.48px;
   color: #222222;
   margin-bottom: 16px;
+}
+
+.header--about {
+  background: #333333;
+  padding-bottom: 0;
+  position: relative;
+  min-height: 265px;
+  padding-left: 20px;
+  justify-content: flex-end;
+}
+.header--about p {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding-top: 75px;
+}
+.header--about h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #FFFFFF;
+  margin: 40px 0;
+  text-transform: capitalize;
+}
+.header--about .header--breadcrumb {
+  margin-right: 20px;
+  width: 156px;
+  height: 49px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.header--about .header--breadcrumb h5 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: -0.48px;
+  color: #222222;
+}
+.header--about .header--breadcrumb h5 span {
+  color: #BEAD8E;
+}
+
+.intro p {
+  margin-top: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 51px;
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -1.16px;
+  color: #222222;
+}
+.intro .intro--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.intro .intro--container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  margin-top: 15px;
+  height: 158px;
+  width: 158px;
+}
+.intro .intro--container div h5 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+.intro .intro--container div:hover {
+  background: #BEAD8E;
+  color: #ffffff;
+}
+
+.restaurant {
+  padding: 20px;
+}
+.restaurant div {
+  text-align: center;
+}
+.restaurant h4 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+  margin-top: 32px;
+  margin-bottom: 26px;
+}
+.restaurant h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -1.05px;
+  color: #222222;
+  margin-bottom: 26px;
+}
+.restaurant p {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 16px;
+}
+.restaurant button {
+  width: 216px;
+  height: 60px;
+  background: #BEAD8E;
+  box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.36);
+  border: none;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.counter {
+  margin-top: 60px;
+  padding: 20px;
+}
+.counter h5 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+  margin-bottom: 24px;
+}
+.counter h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+.counter .counter--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.counter .counter--container .counter--item {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.counter .counter--container .counter--item h2 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+  color: #222222;
+  margin-left: 14px;
+}
+.counter .counter--container .counter--item h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -1.8px;
+  color: #777777;
+  margin-left: 14px;
 }/*# sourceMappingURL=style.css.map */
