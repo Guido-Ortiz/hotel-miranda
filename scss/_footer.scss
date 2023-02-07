@@ -5,6 +5,15 @@ footer {
     // background: url('../resources/footer/bg_image.png');
     background-size: cover;
 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width: 1000px) {
+        max-height: 453px;
+        padding: 40px;
+    }
+
     .footer--header {
         display: flex;
         flex-direction: row;
@@ -28,6 +37,13 @@ footer {
             justify-content: center;
             margin-right: 28px;
         }
+
+        img {
+            @media only screen and (min-width: 1000px) {
+                width: 137px;
+                height: 56px;
+            }
+        }
     }
 
     p {
@@ -40,6 +56,10 @@ footer {
         // align: left;
         vertical-align: top;
         color: $secondary;
+
+        @media only screen and (min-width: 1000px) {
+            max-width: 270px;
+        }
     }
 
     .footer--icons {
@@ -49,6 +69,10 @@ footer {
         align-items: center;
         justify-content: space-evenly;
         margin-top: 40px;
+
+        @media only screen and (min-width: 1000px) {
+            max-width: 270px;
+        }
 
         img {
             width: 24px;
@@ -65,6 +89,12 @@ footer {
             line-height: 48px;
             color: $secondary;
             margin-top: 40px;
+
+            @media only screen and (min-width: 1000px) {
+                font-family: 'Old Standard TT';
+                font-size: 24px;
+                line-height: 24px;
+            }
         }
 
         div {
@@ -74,6 +104,17 @@ footer {
             justify-content: flex-start;
             flex-wrap: wrap;
 
+            @media only screen and (min-width: 1000px) {
+                // border: 1px solid red;
+                max-width: 310px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+
             h5 {
                 font-family: 'Roboto';
                 font-style: normal;
@@ -82,6 +123,11 @@ footer {
                 line-height: 48px;
                 color: $secondary;
                 margin-right: 10px;
+
+                @media only screen and (min-width: 1000px){
+                    // border: 1px solid blue;
+                    margin: 5px;
+                }
             }
         }
     }
@@ -118,6 +164,7 @@ footer {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
+
                 h4 {
                     font-family: 'Old Standard TT';
                     font-style: normal;
@@ -126,6 +173,7 @@ footer {
                     line-height: 24px;
                     color: $secondary;
                 }
+
                 h6 {
                     font-family: 'Old Standard TT';
                     font-style: normal;
@@ -138,7 +186,7 @@ footer {
         }
     }
 
-    
+
 }
 
 .footer--copyright {
@@ -147,6 +195,15 @@ footer {
     padding-left: 20px;
     padding-top: 16px;
     background: #F8F8F8 !important;
+
+    @media only screen and (min-width: 1000px) {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
 
     h4 {
         font-family: 'Roboto';
@@ -165,8 +222,8 @@ footer {
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 19px;         
-        letter-spacing: -0.48px;           
+        line-height: 19px;
+        letter-spacing: -0.48px;
         color: #222222;
         margin-bottom: 16px;
     }

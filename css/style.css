@@ -413,7 +413,6 @@ header .btn--dark {
 
 @media only screen and (min-width: 1000px) {
   section {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -809,6 +808,15 @@ footer {
   margin-top: 60px;
   padding-left: 22px;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 1000px) {
+  footer {
+    max-height: 453px;
+    padding: 40px;
+  }
 }
 footer .footer--header {
   display: flex;
@@ -833,6 +841,12 @@ footer .footer--header div {
   justify-content: center;
   margin-right: 28px;
 }
+@media only screen and (min-width: 1000px) {
+  footer .footer--header img {
+    width: 137px;
+    height: 56px;
+  }
+}
 footer p {
   margin-top: 47px;
   font-family: "Archivo";
@@ -843,12 +857,22 @@ footer p {
   vertical-align: top;
   color: #777777;
 }
+@media only screen and (min-width: 1000px) {
+  footer p {
+    max-width: 270px;
+  }
+}
 footer .footer--icons {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   margin-top: 40px;
+}
+@media only screen and (min-width: 1000px) {
+  footer .footer--icons {
+    max-width: 270px;
+  }
 }
 footer .footer--icons img {
   width: 24px;
@@ -863,12 +887,30 @@ footer .footer--services h2 {
   color: #777777;
   margin-top: 40px;
 }
+@media only screen and (min-width: 1000px) {
+  footer .footer--services h2 {
+    font-family: "Old Standard TT";
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
 footer .footer--services div {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+@media only screen and (min-width: 1000px) {
+  footer .footer--services div {
+    max-width: 310px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
 }
 footer .footer--services div h5 {
   font-family: "Roboto";
@@ -878,6 +920,11 @@ footer .footer--services div h5 {
   line-height: 48px;
   color: #777777;
   margin-right: 10px;
+}
+@media only screen and (min-width: 1000px) {
+  footer .footer--services div h5 {
+    margin: 5px;
+  }
 }
 footer .footer--contact {
   margin-top: 32px;
@@ -931,6 +978,16 @@ footer .footer--contact .footer--container .footer--info h6 {
   padding-left: 20px;
   padding-top: 16px;
   background: #F8F8F8 !important;
+}
+@media only screen and (min-width: 1000px) {
+  .footer--copyright {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
 }
 .footer--copyright h4 {
   font-family: "Roboto";
@@ -1475,7 +1532,6 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 
 .contact {
-  border: 1px solid red;
   margin-top: 24px;
   display: flex;
   flex-direction: row;
@@ -1483,17 +1539,34 @@ footer .footer--contact .footer--container .footer--info h6 {
   justify-content: center;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 1000px) {
+  .contact {
+    border: 1px solid yellow;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 30px;
+  }
+}
 .contact .contact--container {
-  border: 1px solid fuchsia;
   margin-top: 10px;
+  width: 100vw;
   padding: 53px 32px;
   position: relative;
+  width: 80%;
+}
+@media only screen and (min-width: 1000px) {
+  .contact .contact--container {
+    border: 1px solid fuchsia;
+    width: 300px;
+    margin-right: 10px;
+  }
 }
 .contact .contact--container h1 {
   position: absolute;
   width: 224px;
   height: 234px;
-  left: 110.5px;
   bottom: -30px;
   font-family: "Roboto";
   font-style: normal;
@@ -1503,6 +1576,11 @@ footer .footer--contact .footer--container .footer--info h6 {
   letter-spacing: -6px;
   color: #F8F8F8;
   z-index: -1;
+}
+@media only screen and (min-width: 1000px) {
+  .contact .contact--container h1 {
+    left: 82.5px;
+  }
 }
 .contact .contact--container .contact--info {
   display: flex;
@@ -1547,6 +1625,11 @@ footer .footer--contact .footer--container .footer--info h6 {
   justify-content: center;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 1000px) {
+  .form div {
+    padding-left: 30px;
+  }
+}
 .form div input,
 .form div textarea {
   max-width: 300px;
@@ -1562,8 +1645,22 @@ footer .footer--contact .footer--container .footer--info h6 {
   margin-bottom: 16px;
   margin-right: 20px;
 }
+@media only screen and (min-width: 1000px) {
+  .form div input,
+  .form div textarea {
+    max-width: 400px;
+    width: 50%;
+  }
+}
 .form div textarea {
   height: 110px;
+  width: 100% !important;
+}
+@media only screen and (min-width: 1000px) {
+  .form div textarea {
+    max-width: 800px;
+    width: 50%;
+  }
 }
 .form div button {
   font-family: "Roboto";
