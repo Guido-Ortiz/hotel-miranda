@@ -10,6 +10,12 @@
 
 body {
   min-width: 320px;
+  border: 1px solid yellowgreen;
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    border: 1px solid yellowgreen;
+  }
 }
 
 .home {
@@ -535,6 +541,19 @@ header .btn--dark {
   justify-content: center;
   padding-left: 20px;
   padding-top: 64px;
+  padding-right: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .video {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 700px;
+    padding-left: 150px;
+  }
 }
 .video h3 {
   font-family: "Archivo";
@@ -558,6 +577,11 @@ header .btn--dark {
   color: #FFFFFF;
   margin-bottom: 16px;
 }
+@media only screen and (min-width: 1000px) {
+  .video h1 {
+    width: 50%;
+  }
+}
 .video p {
   font-family: "Archivo";
   font-style: normal;
@@ -566,6 +590,11 @@ header .btn--dark {
   line-height: 24px;
   color: #C2C2C2;
   margin-bottom: 32px;
+}
+@media only screen and (min-width: 1000px) {
+  .video p {
+    width: 50%;
+  }
 }
 .video button {
   width: 216px;
@@ -582,14 +611,40 @@ header .btn--dark {
   border: none;
   margin-bottom: 48px;
 }
+.video video {
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .video video {
+    width: 50%;
+  }
+}
+.video .btn--mob {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .video .btn--mob {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .video .video--btn {
+    display: none;
+  }
+}
 
 .facilities {
-  border: 1px solid red;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (min-width: 1000px) {
+  .facilities {
+    width: 100%;
+  }
 }
 .facilities h3 {
   font-family: "Archivo";
@@ -611,59 +666,92 @@ header .btn--dark {
   color: #222222;
   margin-top: 24px;
 }
+.facilities .facilities--item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.facilities .facilities--container {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .facilities .facilities--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .facilities .facilities--container .facilities--item {
+    width: 30%;
+    margin-right: 20px;
+    padding: 30px;
+  }
+  .facilities .facilities--container .facilities--item h3 {
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+    color: #222222;
+    margin: 30px 0;
+  }
+  .facilities .facilities--container .facilities--item p {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+  }
+}
 
 .foods {
+  border: 1px solid yellow;
   margin-top: 60px;
   padding-left: 20px;
   padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 .foods .food--icon {
   float: right;
 }
-.foods h3 {
-  font-family: "Archivo";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: 2.8px;
-  text-transform: uppercase;
-  color: #777777;
-  margin-top: 120px;
-  margin-bottom: 24px;
-}
-.foods h1 {
-  font-family: "Old Standard TT";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 56px;
-  line-height: 60px;
-  letter-spacing: -1.2px;
-  color: #222222;
-  text-transform: capitalize;
-  margin-bottom: 36px;
-}
-.foods .food--container {
+.foods .wrapper {
   display: flex;
   flex-direction: row;
-  margin-bottom: 16px;
-  width: 100%;
-  height: 150px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.foods .food--container .img--container {
-  width: 120%;
+.foods .wrapper .container {
+  border: 1px solid red;
 }
-.foods .food--container .img {
+@media only screen and (min-width: 1000px) {
+  .foods .wrapper .container {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+.foods .wrapper .container div {
+  border: 1px solid hotpink;
   width: 100%;
   height: 100%;
 }
-.foods .food--container .food--text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+@media only screen and (min-width: 1000px) {
+  .foods .wrapper .container div {
+    height: 50%;
+  }
 }
-.foods .food--title {
+.foods .wrapper .container div img {
+  width: 100%;
+  height: 100%;
+}
+.foods .wrapper .container .food--title {
   font-family: "Old Standard TT";
   font-style: normal;
   font-weight: 400;
@@ -673,8 +761,9 @@ header .btn--dark {
   color: #222222;
   padding-left: 20px;
   margin-bottom: 10px;
+  text-transform: capitalize;
 }
-.foods .food--subtitle {
+.foods .wrapper .container .food--subtitle {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -682,29 +771,6 @@ header .btn--dark {
   line-height: 24px;
   color: #222222;
   padding-left: 20px;
-}
-.foods .food--arrows {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  height: 36px;
-}
-.foods .food--arrows .arrow {
-  width: 36px;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.foods .food--arrows .arrow--back {
-  background: #F8F8F8;
-  margin-right: 16px;
-}
-.foods .food--arrows .arrow--next {
-  background: #BEAD8E;
-  color: #ffffff;
-  box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.15);
 }
 
 .numbers {
