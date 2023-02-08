@@ -25,7 +25,8 @@
 
     <!-- NAVBAR -->
     <nav>
-        <span class="material-symbols-outlined menu">menu</span>
+        <span class="material-symbols-outlined menu" id="menu">menu</span>
+        <span class="material-symbols-outlined close menu" id="close">close</span>
         <div class="navbar--container">
             <div class="navbar--header">
                 <div class="logo">
@@ -33,12 +34,51 @@
                 </div>
                 <img src="./resources/Hotel Miranda.png" alt="Hotel Miranda" class="navbar--title" />
             </div>
+
+            <a>
+                <h3 class="menu--desktop">About us</h3>
+            </a>
+            <a>
+                <h3 class="menu--desktop">About us</h3>
+            </a>
+            <a>
+                <h3 class="menu--desktop">About us</h3>
+            </a>
+            <a>
+                <h3 class="menu--desktop">About us</h3>
+            </a>
+
+
             <div class="navbar--icons">
                 <span class="material-symbols-outlined group">group</span>
                 <span class="material-symbols-outlined">search</span>
             </div>
         </div>
     </nav>
+    <div class="menu--mobile" id="menu--items">
+        <ul>
+            <li>
+                <a>
+                    <h3 class="menu--item">About us</h3>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <h3 class="menu--item">About us</h3>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <h3 class="menu--item">About us</h3>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <h3 class="menu--item">About us</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
 
     <!-- LANDING -->
     <div class="header--about">
@@ -154,5 +194,8 @@
     </div>
 
 </body>
+
+<!-- navbar -->
+<script src="./js/navbar/navbar.js"></script>
 
 </html>

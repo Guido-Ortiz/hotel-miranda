@@ -15,6 +15,9 @@
     <!-- team -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Document</title>
 </head>
 
@@ -22,7 +25,8 @@
 
     <!-- NAVBAR -->
     <nav>
-        <span class="material-symbols-outlined menu">menu</span>
+        <span class="material-symbols-outlined menu" id="menu">menu</span>
+        <span class="material-symbols-outlined close menu" id="close">close</span>
         <div class="navbar--container">
             <div class="navbar--header">
                 <div class="logo">
@@ -30,6 +34,21 @@
                 </div>
                 <img src="./resources/Hotel Miranda.png" alt="Hotel Miranda" class="navbar--title" />
             </div>
+
+            <a>
+                <h3 class="menu--desktop">About us</h3>
+            </a>
+            <a>
+                <h3 class="menu--desktop">About us</h3>
+            </a>
+            <a>
+                <h3 class="menu--desktop">About us</h3>
+            </a>
+            <a>
+                <h3 class="menu--desktop">About us</h3>
+            </a>
+
+
             <div class="navbar--icons">
                 <span class="material-symbols-outlined group">group</span>
                 <span class="material-symbols-outlined">search</span>
@@ -38,15 +57,13 @@
     </nav>
 
     <!-- LANDING -->
-    <div class="header--about">
+    <!-- <div class="header--about">
         <p>The ultimate luxury experience</p>
         <h1>About us</h1>
-        <!-- <div> -->
             <div class="header--breadcrumb">
                 <h5>Home | <span> About</span></h5>
             </div>
-        <!-- </div> -->
-    </div>
+    </div> -->
 
     <!-- VIDEO -->
     <div></div>
@@ -79,13 +96,19 @@
         <div>
             <img src="./resources/_about/descarga.jfif" alt="Restaurant" />
         </div>
-        <h4>Restaurant</h4>
-        <h1>Get restaurant facilities & many other more</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic explicabo blanditiis aliquam voluptatibus nobis, repellat unde sed ut eius officia doloribus accusamus nihil, ipsam neque, at necessitatibus et consequatur.</p>
-        <button>Take a tour</button>
-
+        <div>
+            <h4>Restaurant</h4>
+            <h1>Get restaurant facilities & many other more</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic explicabo blanditiis aliquam voluptatibus nobis, repellat unde sed ut eius officia doloribus accusamus nihil, ipsam neque, at necessitatibus et consequatur.</p>
+            <button>Take a tour</button>
+        </div>
     </section> -->
 
+    <!-- CORE FEATURES -->
+    <section class="core">
+        <h3>Facilities</h3>
+    </section>
+    
     <!-- COUNTER -->
     <section class="counter">
         <h5>Counter</h5>
@@ -113,9 +136,20 @@
                 </div>
             </div>
         </div>
+        <div class="counter--image">
+            <img src="./resources/_counter/p1.jfif" alt="Img 1" />
+            <img src="./resources/_counter/p2.jfif" alt="Img 1" />
+        </div>
     </section>
 
     <!-- SLIDER -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <img src="./resources/_counter/p1.jfif" alt="Img 1" class="swiper-slide"/>
+            <img src="./resources/_counter/p2.jfif" alt="Img 1" class="swiper-slide" />
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
 
 
     <!-- FOOTER -->
@@ -163,13 +197,31 @@
                 </div>
             </div>
         </div>
-        
+
     </footer>
     <div class="footer--copyright">
         <h4>Copyright By@Example - 2020</h4>
         <h5>Terms of use | Privacy Enviromental Policy</h5>
     </div>
 
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+
 </body>
+
+<!-- navbar -->
+<script src="./js/navbar/navbar.js"></script>
 
 </html>

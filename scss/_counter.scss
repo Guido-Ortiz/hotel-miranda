@@ -2,6 +2,19 @@
     // border: 1px solid red;
     margin-top: 60px;
     padding: 20px;
+    margin: 0 auto;
+
+    @media only screen and (min-width: 1000px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 80%;
+        margin-top: 40px;
+        // padding: 0 200px;
+        // margin-left: 200px;
+        // margin-right: 100px;
+    }
 
     h5 {
         font-family: 'Archivo';
@@ -13,6 +26,10 @@
         text-transform: uppercase;
         color: $secondary;
         margin-bottom: 24px;
+
+        @media only screen and (min-width: 1000px){
+            text-align: left;
+        }
     }
 
     h1 {
@@ -24,6 +41,10 @@
         letter-spacing: -1.2px;
         color: #222222;
         margin-bottom: 15px;
+        
+        @media only screen and (min-width: 1000px){
+            margin-bottom: 42px;
+        }
     }
 
     .counter--container {
@@ -32,6 +53,12 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+
+        @media only screen and (min-width: 1000px){
+            // border: 1px solid fuchsia;
+            text-align: center;
+            margin: 0 auto;
+        }
 
         .counter--item {
             // border: 1px solid firebrick;
@@ -63,5 +90,59 @@
                 margin-left: 14px;
             }
         }
+        
+    }
+    
+}
+
+.counter--image {
+    display: none;
+
+    @media only screen and (min-width: 1000px){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        
+        img {
+            margin: 0 10px;
+        }
+    }
+}
+
+.swiper {
+    width: 80%;
+    height: 80%;
+
+    @media only screen and (min-width: 1000px){
+        display: none !important;
+    }
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  :root{--swiper-theme-color: #BEAD8E !important}
+
+.mySwiper {
+    // border: 1px solid rebeccapurple;
+    // height: 50vh;
+
+    @media only screen and (min-width: 1000px){
+        display: none;
     }
 }

@@ -24,7 +24,7 @@ body {
 
 nav {
   height: 70px;
-  width: 100vw;
+  width: 99.5vw;
   background: #ffffff;
   display: flex;
   flex-direction: row;
@@ -49,19 +49,20 @@ nav .menu {
 }
 nav .navbar--container {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding-right: 20px;
 }
 @media only screen and (min-width: 1000px) {
   nav .navbar--container {
-    border: 1px solid rebeccapurple;
     background: #ffffff;
     margin: 0 230px;
     margin-top: 50px;
     display: flex;
+    z-index: 1;
   }
 }
 nav .navbar--header {
@@ -1012,11 +1013,13 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 
 .header--about {
+  border: 1px solid red;
   background: #333333;
   padding-bottom: 0;
   position: relative;
   min-height: 265px;
   padding-left: 20px;
+  z-index: 0;
   justify-content: flex-end;
 }
 .header--about p {
@@ -1030,6 +1033,11 @@ footer .footer--contact .footer--container .footer--info h6 {
   text-transform: uppercase;
   padding-top: 75px;
 }
+@media only screen and (min-width: 1000px) {
+  .header--about p {
+    padding-left: 60px;
+  }
+}
 .header--about h1 {
   font-family: "Old Standard TT";
   font-style: normal;
@@ -1040,6 +1048,12 @@ footer .footer--contact .footer--container .footer--info h6 {
   color: #FFFFFF;
   margin: 40px 0;
   text-transform: capitalize;
+  padding-bottom: 47px;
+}
+@media only screen and (min-width: 1000px) {
+  .header--about h1 {
+    padding-left: 60px;
+  }
 }
 .header--about .header--breadcrumb {
   margin-right: 20px;
@@ -1050,6 +1064,14 @@ footer .footer--contact .footer--container .footer--info h6 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+}
+@media only screen and (min-width: 1000px) {
+  .header--about .header--breadcrumb {
+    right: 20%;
+  }
 }
 .header--about .header--breadcrumb h5 {
   font-family: "Archivo";
@@ -1064,6 +1086,13 @@ footer .footer--contact .footer--container .footer--info h6 {
   color: #BEAD8E;
 }
 
+@media only screen and (min-width: 1000px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .intro p {
   margin-top: 36px;
   padding-left: 20px;
@@ -1078,6 +1107,11 @@ footer .footer--contact .footer--container .footer--info h6 {
   letter-spacing: -1.16px;
   color: #222222;
 }
+@media only screen and (min-width: 1000px) {
+  .intro p {
+    margin-bottom: 20px;
+  }
+}
 .intro .intro--container {
   display: flex;
   flex-direction: row;
@@ -1086,6 +1120,11 @@ footer .footer--contact .footer--container .footer--info h6 {
   align-items: center;
   flex-wrap: wrap;
   padding-left: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .intro .intro--container {
+    width: 100%;
+  }
 }
 .intro .intro--container div {
   display: flex;
@@ -1116,8 +1155,29 @@ footer .footer--contact .footer--container .footer--info h6 {
 .restaurant {
   padding: 20px;
 }
+@media only screen and (min-width: 1000px) {
+  .restaurant {
+    max-height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .restaurant div {
   text-align: center;
+}
+@media only screen and (min-width: 1000px) {
+  .restaurant div {
+    width: 50%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .restaurant div img {
+    height: 100%;
+    width: 100%;
+  }
 }
 .restaurant h4 {
   font-family: "Archivo";
@@ -1169,6 +1229,17 @@ footer .footer--contact .footer--container .footer--info h6 {
 .counter {
   margin-top: 60px;
   padding: 20px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1000px) {
+  .counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 80%;
+    margin-top: 40px;
+  }
 }
 .counter h5 {
   font-family: "Archivo";
@@ -1181,6 +1252,11 @@ footer .footer--contact .footer--container .footer--info h6 {
   color: #777777;
   margin-bottom: 24px;
 }
+@media only screen and (min-width: 1000px) {
+  .counter h5 {
+    text-align: left;
+  }
+}
 .counter h1 {
   font-family: "Old Standard TT";
   font-style: normal;
@@ -1191,12 +1267,23 @@ footer .footer--contact .footer--container .footer--info h6 {
   color: #222222;
   margin-bottom: 15px;
 }
+@media only screen and (min-width: 1000px) {
+  .counter h1 {
+    margin-bottom: 42px;
+  }
+}
 .counter .counter--container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media only screen and (min-width: 1000px) {
+  .counter .counter--container {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 .counter .counter--container .counter--item {
   padding: 10px;
@@ -1226,16 +1313,82 @@ footer .footer--contact .footer--container .footer--info h6 {
   margin-left: 14px;
 }
 
+.counter--image {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .counter--image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .counter--image img {
+    margin: 0 10px;
+  }
+}
+
+.swiper {
+  width: 80%;
+  height: 80%;
+}
+@media only screen and (min-width: 1000px) {
+  .swiper {
+    display: none !important;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+:root {
+  --swiper-theme-color: #BEAD8E !important;
+}
+
+@media only screen and (min-width: 1000px) {
+  .mySwiper {
+    display: none;
+  }
+}
+
 .room--wrapper {
+  border: 1px solid red;
   margin-top: 48px;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .room--wrapper .room--detail {
+  border: 1px solid fuchsia;
   padding-bottom: 28px;
   margin-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (min-width: 1000px) {
+  .room--wrapper .room--detail {
+    border: 1px solid blue;
+    max-width: 370px;
+    margin: 10px;
+  }
 }
 .room--wrapper .room--detail .room-container {
   position: relative;
@@ -1545,7 +1698,7 @@ footer .footer--contact .footer--container .footer--info h6 {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 30px;
   }
 }
@@ -1611,12 +1764,18 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 
 .form {
+  border: 1px solid red;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .form {
+    padding: 0 60px;
+  }
 }
 .form div {
   display: flex;
@@ -1627,12 +1786,12 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 @media only screen and (min-width: 1000px) {
   .form div {
-    padding-left: 30px;
+    border: 1px solid fuchsia;
   }
 }
 .form div input,
 .form div textarea {
-  max-width: 300px;
+  max-width: 350px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -1650,17 +1809,12 @@ footer .footer--contact .footer--container .footer--info h6 {
   .form div textarea {
     max-width: 400px;
     width: 50%;
+    margin-right: 50px;
   }
 }
 .form div textarea {
   height: 110px;
   width: 100% !important;
-}
-@media only screen and (min-width: 1000px) {
-  .form div textarea {
-    max-width: 800px;
-    width: 50%;
-  }
 }
 .form div button {
   font-family: "Roboto";
