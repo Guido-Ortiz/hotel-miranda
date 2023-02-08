@@ -1226,6 +1226,89 @@ footer .footer--contact .footer--container .footer--info h6 {
   color: #FFFFFF;
 }
 
+.core {
+  border: 1px solid blue;
+  background: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 118px 0;
+}
+.core h3 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #C2C2C2;
+  margin-bottom: 26px;
+}
+.core h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: -2.4px;
+  color: #FFFFFF;
+}
+.core .core--container {
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+.core .core--container .core--item {
+  border: 1px solid salmon;
+  background: #292929;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  padding: 60px;
+  position: relative;
+  max-width: 370px;
+}
+.core .core--container .core--item h3 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  color: #FFFFFF;
+  margin-top: 36px;
+}
+.core .core--container .core--item p {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+.core .core--container .core--item h1 {
+  position: absolute;
+  width: 143px;
+  height: 130px;
+  left: 232px;
+  top: 0px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 130px;
+  color: #222222;
+}
+
 .counter {
   margin-top: 60px;
   padding: 20px;
