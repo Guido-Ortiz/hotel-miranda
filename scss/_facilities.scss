@@ -1,10 +1,11 @@
 .facilities {
-    // border: 1px solid red;
+    border: 1px solid red;
     margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: #ffffff !important;
 
     @media only screen and (min-width: 1000px) {
         width: 100%;
@@ -29,7 +30,9 @@
         line-height: 60px;
         letter-spacing: -1.2px;
         color: #222222;
+        padding: 20px;
         margin-top: 24px;
+        margin-bottom: 30px;
     }
 
     .facilities--item {
@@ -37,6 +40,21 @@
         flex-direction: column;
         align-items: center;
         // justify-content: center;
+        position: relative;
+
+        h1 {
+            position: absolute;
+            // top: 0;
+            // left: 0;
+            left: 150px;
+            top: -55px;
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 120px;
+            line-height: 130px;
+            color: rgba(34, 34, 34, 0.04);
+        }
     }
 
     .facilities--container {
@@ -73,6 +91,20 @@
                     font-size: 14px;
                     line-height: 24px;
                     color: $secondary;
+                }
+
+                h1 {
+                    position: absolute;
+                    width: 143px;
+                    height: 130px;
+                    left: 110px;
+                    top: 0px;
+                    font-family: 'Archivo';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 120px;
+                    line-height: 130px;
+                    color: rgba(34, 34, 34, 0.04);
                 }
             }
         }

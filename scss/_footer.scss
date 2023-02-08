@@ -53,7 +53,6 @@ footer {
         font-size: 16px;
         line-height: 26px;
         line-height: 149%;
-        // align: left;
         vertical-align: top;
         color: $secondary;
 
@@ -197,7 +196,7 @@ footer {
     background: #F8F8F8 !important;
 
     @media only screen and (min-width: 1000px) {
-        border: 1px solid red;
+        // border: 1px solid red;
         display: flex;
         flex-direction: row;
         align-items: center;

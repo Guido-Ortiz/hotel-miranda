@@ -10,12 +10,6 @@
 
 body {
   min-width: 320px;
-  border: 1px solid yellowgreen;
-}
-@media only screen and (min-width: 1000px) {
-  body {
-    border: 1px solid yellowgreen;
-  }
 }
 
 .home {
@@ -210,6 +204,7 @@ header .btn--dark {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin-bottom: 20px;
 }
 @media only screen and (min-width: 1000px) {
   .arrival {
@@ -281,12 +276,22 @@ header .btn--dark {
   margin-top: 60px;
   background: #F9F9F9;
 }
+@media only screen and (min-width: 1000px) {
+  .about {
+    margin: 0 auto;
+  }
+}
 .about .about--container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding-left: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .about .about--container {
+    padding: 20px;
+  }
 }
 .about .about--container h3 {
   margin-top: 38px;
@@ -338,14 +343,17 @@ header .btn--dark {
   margin-bottom: 45px;
 }
 
+.about--items {
+  margin: 0 auto;
+}
 @media only screen and (min-width: 1000px) {
   .about--items {
-    border: 1px solid yellow;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: center;
     margin-top: 30px;
+    margin: 0 auto;
   }
 }
 .about--items .about--img {
@@ -363,7 +371,6 @@ header .btn--dark {
 }
 @media only screen and (min-width: 1000px) {
   .about--items .about--img div {
-    border: 1px solid fuchsia;
     max-height: 250px;
     padding-bottom: 30px;
   }
@@ -455,7 +462,7 @@ header .btn--dark {
   margin-bottom: 24px;
 }
 
-.mySwiper {
+.mySwip {
   border: 1px solid red;
   display: flex;
   flex-direction: column;
@@ -465,6 +472,15 @@ header .btn--dark {
   margin: 0 auto;
 }
 
+.slider {
+  border: 1px solid slateblue;
+}
+@media only screen and (min-width: 1000px) {
+  .slider {
+    border: 1px solid navy;
+  }
+}
+
 .item {
   display: flex;
   flex-direction: column;
@@ -472,7 +488,6 @@ header .btn--dark {
   position: relative;
 }
 .item .room--icons {
-  border: 1px solid blue;
   z-index: 1;
   background: #ffffff;
   height: 40px;
@@ -483,16 +498,19 @@ header .btn--dark {
   justify-content: space-evenly;
   position: absolute;
   top: -5px;
-  left: 5%;
+  left: 0%;
 }
 .item .room--icons img {
   width: 12px;
   height: 8.18px;
 }
-.item .img {
-  border: 1px solid greenyellow;
+.item div {
+  width: 300px;
+  margin: 0 auto;
+}
+.item div .img {
   padding: 0 15px;
-  width: 290px;
+  width: 100%;
 }
 .item h3 {
   font-family: "Old Standard TT";
@@ -635,11 +653,13 @@ header .btn--dark {
 }
 
 .facilities {
+  border: 1px solid red;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #ffffff !important;
 }
 @media only screen and (min-width: 1000px) {
   .facilities {
@@ -664,12 +684,26 @@ header .btn--dark {
   line-height: 60px;
   letter-spacing: -1.2px;
   color: #222222;
+  padding: 20px;
   margin-top: 24px;
+  margin-bottom: 30px;
 }
 .facilities .facilities--item {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+.facilities .facilities--item h1 {
+  position: absolute;
+  left: 150px;
+  top: -55px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 130px;
+  color: rgba(34, 34, 34, 0.04);
 }
 .facilities .facilities--container {
   display: none;
@@ -705,10 +739,22 @@ header .btn--dark {
     line-height: 24px;
     color: #777777;
   }
+  .facilities .facilities--container .facilities--item h1 {
+    position: absolute;
+    width: 143px;
+    height: 130px;
+    left: 110px;
+    top: 0px;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 130px;
+    color: rgba(34, 34, 34, 0.04);
+  }
 }
 
 .foods {
-  border: 1px solid yellow;
   margin-top: 60px;
   padding-left: 20px;
   padding-right: 20px;
@@ -716,36 +762,37 @@ header .btn--dark {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 }
 .foods .food--icon {
-  float: right;
+  position: absolute;
+  right: 0;
 }
 .foods .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
-.foods .wrapper .container {
-  border: 1px solid red;
+@media only screen and (max-width: 999px) {
+  .foods .wrapper {
+    display: none;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .foods .wrapper .container {
-    margin-bottom: 0;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    margin: 10px;
   }
 }
 .foods .wrapper .container div {
-  border: 1px solid hotpink;
   width: 100%;
-  height: 100%;
-}
-@media only screen and (min-width: 1000px) {
-  .foods .wrapper .container div {
-    height: 50%;
-  }
+  height: 220px;
 }
 .foods .wrapper .container div img {
   width: 100%;
@@ -759,7 +806,7 @@ header .btn--dark {
   line-height: 24px;
   letter-spacing: -0.72px;
   color: #222222;
-  padding-left: 20px;
+  padding: 20px;
   margin-bottom: 10px;
   text-transform: capitalize;
 }
@@ -772,7 +819,128 @@ header .btn--dark {
   color: #222222;
   padding-left: 20px;
 }
+.foods h3 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+  margin-top: 120px;
+  margin-bottom: 24px;
+}
+.foods h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: #222222;
+  text-transform: capitalize;
+  margin-bottom: 36px;
+}
+.foods #p2 {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .foods #p2 {
+    display: block;
+  }
+  .foods #p2 #p1 {
+    display: none;
+  }
+}
+.foods #p2 #p1 {
+  display: block;
+}
+@media only screen and (min-width: 1000px) {
+  .foods #p2 #p1 {
+    display: none;
+  }
+}
+.foods .food--container {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+  width: 100%;
+  height: 150px;
+}
+.foods .food--container .img--container {
+  width: 120%;
+}
+.foods .food--container .img {
+  width: 100%;
+  height: 100%;
+}
+.foods .food--container .food--text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.foods .food--title {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+  color: #222222;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.foods .food--subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #222222;
+  padding-left: 20px;
+}
+.foods .food--arrows {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 36px;
+}
+.foods .food--arrows .arrow {
+  width: 36px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 1000px) {
+  .foods .food--arrows .arrow {
+    display: none;
+  }
+}
+.foods .food--arrows .arrow--back {
+  background: #F8F8F8;
+  margin-right: 16px;
+}
+.foods .food--arrows .arrow--next {
+  background: #BEAD8E;
+  color: #ffffff;
+  box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.15);
+}
 
+@media only screen and (min-width: 1000px) {
+  #p1,
+  #p2,
+  .food--arrows {
+    display: none;
+  }
+  #p2 {
+    display: none !important;
+  }
+}
 .numbers {
   margin-top: 91px;
   padding: 48px 0;
@@ -982,7 +1150,6 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 @media only screen and (min-width: 1000px) {
   .footer--copyright {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1227,13 +1394,25 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 
 .core {
-  border: 1px solid blue;
   background: #222222;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 118px 0;
+}
+.core .mySwiper {
+  border: none;
+}
+.core .mySwiper :root {
+  --swiper-theme-color: red !important;
+}
+.core .core--container {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .core .core--swiper {
+    display: none;
+  }
 }
 .core h3 {
   font-family: "Archivo";
@@ -1245,27 +1424,19 @@ footer .footer--contact .footer--container .footer--info h6 {
   text-transform: uppercase;
   color: #C2C2C2;
   margin-bottom: 26px;
+  margin-top: 28px;
 }
 .core h1 {
   font-family: "Old Standard TT";
   font-style: normal;
   font-weight: 400;
-  font-size: 80px;
-  line-height: 80px;
-  letter-spacing: -2.4px;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
   color: #FFFFFF;
+  margin-bottom: 26px;
 }
-.core .core--container {
-  border: 1px solid yellow;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 80%;
-}
-.core .core--container .core--item {
-  border: 1px solid salmon;
+.core .core--item {
   background: #292929;
   display: flex;
   flex-direction: column;
@@ -1273,11 +1444,11 @@ footer .footer--contact .footer--container .footer--info h6 {
   justify-content: center;
   margin-right: 25px;
   margin-bottom: 25px;
-  padding: 60px;
+  padding: 30px;
   position: relative;
   max-width: 370px;
 }
-.core .core--container .core--item h3 {
+.core .core--item h3 {
   font-family: "Old Standard TT";
   font-style: normal;
   font-weight: 400;
@@ -1287,7 +1458,7 @@ footer .footer--contact .footer--container .footer--info h6 {
   color: #FFFFFF;
   margin-top: 36px;
 }
-.core .core--container .core--item p {
+.core .core--item p {
   font-family: "Archivo";
   font-style: normal;
   font-weight: 400;
@@ -1295,11 +1466,11 @@ footer .footer--contact .footer--container .footer--info h6 {
   line-height: 24px;
   color: #FFFFFF;
 }
-.core .core--container .core--item h1 {
+.core .core--item h1 {
   position: absolute;
   width: 143px;
   height: 130px;
-  left: 232px;
+  left: 110px;
   top: 0px;
   font-family: "Archivo";
   font-style: normal;
@@ -1309,6 +1480,87 @@ footer .footer--contact .footer--container .footer--info h6 {
   color: #222222;
 }
 
+@media only screen and (min-width: 1000px) {
+  .core {
+    background: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 118px 0;
+  }
+  .core h3 {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #C2C2C2;
+    margin-bottom: 26px;
+  }
+  .core h1 {
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2.4px;
+    color: #FFFFFF;
+  }
+  .core .core--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+  }
+  .core .core--container .core--item {
+    background: #292929;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding: 60px;
+    position: relative;
+    max-width: 370px;
+  }
+  .core .core--container .core--item h3 {
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+    color: #FFFFFF;
+    margin-top: 36px;
+  }
+  .core .core--container .core--item p {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+  .core .core--container .core--item h1 {
+    position: absolute;
+    width: 143px;
+    height: 130px;
+    left: 232px;
+    top: 0px;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 130px;
+    color: #222222;
+  }
+}
 .counter {
   margin-top: 60px;
   padding: 20px;
@@ -1366,6 +1618,7 @@ footer .footer--contact .footer--container .footer--info h6 {
   .counter .counter--container {
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 .counter .counter--container .counter--item {
@@ -1374,6 +1627,11 @@ footer .footer--contact .footer--container .footer--info h6 {
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .counter .counter--container .counter--item {
+    margin: 0 20px;
+  }
 }
 .counter .counter--container .counter--item h2 {
   font-family: "Old Standard TT";
@@ -1401,6 +1659,7 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 @media only screen and (min-width: 1000px) {
   .counter--image {
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1409,6 +1668,8 @@ footer .footer--contact .footer--container .footer--info h6 {
   }
   .counter--image img {
     margin: 0 10px;
+    width: 50%;
+    height: 80%;
   }
 }
 
@@ -1442,6 +1703,9 @@ footer .footer--contact .footer--container .footer--info h6 {
   --swiper-theme-color: #BEAD8E !important;
 }
 
+.mySwiper {
+  border: none;
+}
 @media only screen and (min-width: 1000px) {
   .mySwiper {
     display: none;
