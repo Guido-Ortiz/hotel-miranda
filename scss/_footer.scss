@@ -3,6 +3,8 @@ footer {
     margin-top: 60px;
     padding-left: 22px;
     // background: url('../resources/footer/bg_image.png');
+    // filter: invert(0.45) sepia(0.7);
+    // opacity: 0.3;
     background-size: cover;
 
     display: flex;
@@ -76,6 +78,11 @@ footer {
         img {
             width: 24px;
             height: 24px;
+        }
+
+        img:hover{
+            background: $primary;
+            color: #ffffff;
         }
     }
 

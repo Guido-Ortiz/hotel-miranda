@@ -24,6 +24,10 @@ nav {
   flex-direction: row;
   align-items: center;
 }
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
 @media only screen and (min-width: 1000px) {
   nav {
     position: relative;
@@ -705,6 +709,14 @@ header .btn--dark {
   line-height: 130px;
   color: rgba(34, 34, 34, 0.04);
 }
+.facilities .facilities--item img {
+  padding: 5px;
+}
+.facilities .facilities--item img:hover {
+  cursor: pointer;
+  color: #ffffff;
+  border: 1px solid #BEAD8E;
+}
 .facilities .facilities--container {
   display: none;
 }
@@ -1046,6 +1058,10 @@ footer .footer--icons {
 footer .footer--icons img {
   width: 24px;
   height: 24px;
+}
+footer .footer--icons img:hover {
+  background: #BEAD8E;
+  color: #ffffff;
 }
 footer .footer--services h2 {
   font-family: "Roboto";
@@ -2041,7 +2057,6 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 @media only screen and (min-width: 1000px) {
   .contact {
-    border: 1px solid yellow;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -2058,7 +2073,6 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 @media only screen and (min-width: 1000px) {
   .contact .contact--container {
-    border: 1px solid fuchsia;
     width: 300px;
     margin-right: 10px;
   }
@@ -2111,7 +2125,6 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 
 .form {
-  border: 1px solid red;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -2130,11 +2143,6 @@ footer .footer--contact .footer--container .footer--info h6 {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-}
-@media only screen and (min-width: 1000px) {
-  .form div {
-    border: 1px solid fuchsia;
-  }
 }
 .form div input,
 .form div textarea {

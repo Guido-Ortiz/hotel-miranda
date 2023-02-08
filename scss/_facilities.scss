@@ -55,6 +55,17 @@
             line-height: 130px;
             color: rgba(34, 34, 34, 0.04);
         }
+
+        img {
+            padding: 5px;
+        }
+
+        img:hover {
+            cursor: pointer;
+            // filter: brightness(50%);
+            color: #ffffff;
+            border: 1px solid $primary;
+        }
     }
 
     .facilities--container {
