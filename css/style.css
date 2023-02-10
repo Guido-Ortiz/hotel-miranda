@@ -23,8 +23,6 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  top: 0;
-  z-index: 1;
 }
 @media only screen and (min-width: 1000px) {
   nav {
@@ -106,7 +104,6 @@ nav .navbar--icons .group {
 .menu--mobile {
   border: 1px solid fuchsia;
   display: none;
-  position: absolute;
   z-index: 2;
   background-color: #FFFFFF;
   width: 100vw;
