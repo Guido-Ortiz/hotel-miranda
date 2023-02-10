@@ -6,11 +6,6 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    // position: fixed;
-    // top: 0;
-    // z-index: 1;
-
-    
 
     @media only screen and (min-width: 1000px) {
         // border: 1px solid fuchsia;
@@ -104,11 +99,11 @@ nav {
 }
 
 .menu--mobile {
-    border: 1px solid fuchsia;
+    // border: 1px solid fuchsia;
     display: none;
     // position: absolute;
     // top: 70px;
-    z-index: 2;
+    // z-index: 2;
     background-color: #FFFFFF;
     width: 100vw;
 
