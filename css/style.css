@@ -2185,4 +2185,338 @@ footer .footer--contact .footer--container .footer--info h6 {
   border: none;
   min-width: 258px;
   padding: 20px;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 1000px) {
+  .offers {
+    margin-top: 60px;
+  }
+}
+.offers .offers--item {
+  padding: 20px;
+}
+.offers .offers--item .offers--img--container {
+  position: relative;
+}
+.offers .offers--item .offers--img--container img {
+  width: 100%;
+}
+.offers .offers--item .offers--img--container h4 {
+  position: absolute;
+  right: 5px;
+  bottom: 40px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 25px;
+  text-align: right;
+  text-decoration-line: line-through;
+  color: #BEAD8E;
+}
+.offers .offers--item .offers--img--container h4 span {
+  font-size: 13px;
+  line-height: 15px;
+  text-decoration-line: line-through;
+}
+.offers .offers--item .offers--img--container h3 {
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: right;
+  color: #DE5777;
+}
+.offers .offers--item .offers--img--container h3 span {
+  font-size: 13px;
+  line-height: 15px;
+  text-decoration-line: none;
+}
+.offers .offers--item .offers--description {
+  padding: 20px;
+}
+.offers .offers--item .offers--description h5 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #777777;
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+.offers .offers--item .offers--description h2 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.44px;
+  color: #222222;
+}
+.offers .offers--item .offers--description p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+}
+.offers .offers--item .offers--icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+.offers .offers--item .offers--icons div {
+  display: flex;
+  align-items: center;
+  margin: 5px 7px;
+}
+.offers .offers--item .offers--icons div img {
+  margin-right: 2px;
+}
+.offers .offers--item .offers--icons div h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #777777;
+  margin: 0 2px;
+}
+.offers .offers--item button {
+  width: 216px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  border: none;
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #BDAC8D;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.offers--swiper {
+  background: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.offers--swiper h3 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #BDAC8D;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+.offers--swiper h2 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+.offers--swiper .offerSwiper {
+  margin-bottom: 48px;
+}
+@media only screen and (min-width: 1000px) {
+  .offers--swiper .offerSwiper {
+    display: none;
+  }
+}
+.offers--swiper .offer--detail {
+  padding-bottom: 28px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .offers--swiper .offer--detail {
+    max-width: 370px;
+    margin: 10px;
+  }
+}
+.offers--swiper .offer--detail .offer-container {
+  position: relative;
+}
+.offers--swiper .offer--detail .offer-container .offer--detail--icons {
+  height: 40px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: -5px;
+  right: 12px;
+  background: #ffffff;
+}
+.offers--swiper .offer--detail .offer-container .offer--detail--icons img {
+  width: 12px;
+  height: 8.18px;
+}
+.offers--swiper .offer--detail h3 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.72px;
+  color: #222222;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+.offers--swiper .offer--detail p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #777777;
+  margin-bottom: 10px;
+}
+.offers--swiper .offer--detail .room--price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.offers--swiper .offer--detail .room--price h4 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: right;
+  color: #BEAD8E;
+  margin-right: 19px;
+}
+.offers--swiper .offer--detail .room--price span {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: right;
+  color: #BDBDBD;
+}
+
+.offer {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .offer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 120px;
+  }
+  .offer .offer--detail {
+    max-width: 370px;
+    margin: 10px;
+  }
+  .offer .offer--detail .offer-container {
+    position: relative;
+  }
+  .offer .offer--detail .offer-container .offer--detail--icons {
+    height: 40px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: -5px;
+    right: 12px;
+    background: #ffffff;
+  }
+  .offer .offer--detail .offer-container .offer--detail--icons img {
+    width: 12px;
+    height: 8.18px;
+  }
+  .offer .offer--detail h3 {
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.72px;
+    color: #222222;
+    margin-top: 48px;
+    margin-bottom: 16px;
+  }
+  .offer .offer--detail p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #777777;
+    margin-bottom: 10px;
+  }
+  .offer .offer--detail .room--price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .offer .offer--detail .room--price h4 {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: right;
+    color: #BEAD8E;
+    margin-right: 19px;
+  }
+  .offer .offer--detail .room--price span {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: right;
+    color: #BDBDBD;
+  }
 }/*# sourceMappingURL=style.css.map */
