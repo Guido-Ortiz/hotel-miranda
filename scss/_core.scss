@@ -43,11 +43,13 @@
         font-family: 'Old Standard TT';
         font-style: normal;
         font-weight: 400;
-        font-size: 56px;
+        font-size: 52px;
         line-height: 60px;
         letter-spacing: -1.2px;
         color: #FFFFFF;
         margin-bottom: 26px;
+        // text-transform: capitalize;
+        // margin: 0 auto;
     }
 
     .core--item {
@@ -62,6 +64,8 @@
         padding: 30px;
         position: relative;
         max-width: 370px;
+        margin: 0 auto;
+        margin-bottom: 63px;
 
         h3 {
             font-family: 'Old Standard TT';

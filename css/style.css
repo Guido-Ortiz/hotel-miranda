@@ -69,7 +69,7 @@ nav .navbar--header {
   align-items: center;
   justify-content: center;
   margin-left: 32px;
-  margin-right: 13px;
+  margin-right: 10px;
 }
 nav .navbar--header .logo {
   background: #FFFFFF;
@@ -114,6 +114,7 @@ nav .navbar--icons .group {
   padding-left: 21px;
   margin-top: 32px;
   margin-bottom: 24px;
+  text-decoration: none;
 }
 
 .menu--desktop {
@@ -1196,7 +1197,6 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 
 .header--about {
-  border: 1px solid red;
   background: #333333;
   padding-bottom: 0;
   position: relative;
@@ -1383,6 +1383,7 @@ footer .footer--contact .footer--container .footer--info h6 {
   letter-spacing: -1.05px;
   color: #222222;
   margin-bottom: 26px;
+  text-transform: capitalize;
 }
 .restaurant p {
   font-family: "Archivo";
@@ -1446,7 +1447,7 @@ footer .footer--contact .footer--container .footer--info h6 {
   font-family: "Old Standard TT";
   font-style: normal;
   font-weight: 400;
-  font-size: 56px;
+  font-size: 52px;
   line-height: 60px;
   letter-spacing: -1.2px;
   color: #FFFFFF;
@@ -1463,6 +1464,8 @@ footer .footer--contact .footer--container .footer--info h6 {
   padding: 30px;
   position: relative;
   max-width: 370px;
+  margin: 0 auto;
+  margin-bottom: 63px;
 }
 .core .core--item h3 {
   font-family: "Old Standard TT";
@@ -1617,6 +1620,7 @@ footer .footer--contact .footer--container .footer--info h6 {
   letter-spacing: -1.2px;
   color: #222222;
   margin-bottom: 15px;
+  text-transform: capitalize;
 }
 @media only screen and (min-width: 1000px) {
   .counter h1 {
@@ -1823,7 +1827,7 @@ footer .footer--contact .footer--container .footer--info h6 {
 .room--type {
   padding: 20px;
   margin-top: 28px;
-  margin-bottom: 49px;
+  margin-bottom: 29px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1863,6 +1867,11 @@ footer .footer--contact .footer--container .footer--info h6 {
   font-size: 14px;
   line-height: 25px;
 }
+@media only screen and (min-width: 1000px) {
+  .room--type {
+    display: none;
+  }
+}
 
 .availability {
   padding: 20px 40px;
@@ -1882,6 +1891,7 @@ footer .footer--contact .footer--container .footer--info h6 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .availability .availability--container div {
@@ -1939,11 +1949,165 @@ footer .footer--contact .footer--container .footer--info h6 {
   line-height: 24px;
   color: #777777;
 }
+@media only screen and (min-width: 1000px) {
+  .availability {
+    display: none;
+  }
+}
+
+.availability--desktop {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .availability--desktop {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .availability--desktop .ava--type {
+    min-width: 700px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 28px;
+  }
+  .availability--desktop .ava--type h4 {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #777777;
+  }
+  .availability--desktop .ava--type h1 {
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.44px;
+    color: #222222;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  .availability--desktop .ava--type h3 {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: right;
+    color: #BEAD8E;
+  }
+  .availability--desktop .ava--type h3 span {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .availability--desktop .ava--type div {
+    margin-top: 20px;
+  }
+  .availability--desktop .ava--type div img {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .availability--desktop .ava--type p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
+  }
+  .availability--desktop .availab--desktop {
+    max-width: 370px;
+    padding: 20px;
+    margin-top: 28px;
+  }
+  .availability--desktop .availab--desktop h3 {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: -0.54px;
+    color: #222222;
+    margin-bottom: 26px;
+  }
+  .availability--desktop .availab--desktop .availability--container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .availability--desktop .availab--desktop .availability--container div {
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 19px;
+    margin-right: 20px;
+  }
+  .availability--desktop .availab--desktop .availability--container div h4 {
+    margin-bottom: 13px;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: right;
+    color: #222222;
+  }
+  .availability--desktop .availab--desktop .availability--container div input {
+    min-width: 200px;
+    height: 60px;
+    background: #F8F8F8;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    color: #777777;
+    border: none;
+  }
+  .availability--desktop .availab--desktop .availability--container button {
+    min-width: 220px;
+    height: 60px;
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #BEAD8E;
+    border: none;
+  }
+  .availability--desktop .availab--desktop p {
+    margin-top: 48px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+  }
+}
 
 .amenities {
-  border: 1px solid red;
   margin-top: 60px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .amenities h2 {
   font-family: "Old Standard TT";
@@ -1952,7 +2116,14 @@ footer .footer--contact .footer--container .footer--info h6 {
   font-size: 30px;
   line-height: 30px;
   color: #222222;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1000px) {
+  .amenities h2 {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 .amenities .amenities--container {
   display: flex;
@@ -1961,12 +2132,24 @@ footer .footer--contact .footer--container .footer--info h6 {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 1000px) {
+  .amenities .amenities--container {
+    width: 70%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
 .amenities .amenities--container div {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: 16px;
   margin-bottom: 16px;
+}
+@media only screen and (min-width: 1000px) {
+  .amenities .amenities--container div {
+    margin: 10px;
+  }
 }
 .amenities .amenities--container div h5 {
   font-family: "Roboto";
@@ -1979,7 +2162,6 @@ footer .footer--contact .footer--container .footer--info h6 {
 }
 
 .founder {
-  border: 1px solid red;
   margin-top: 44px;
   display: flex;
   flex-direction: column;
@@ -1987,10 +2169,18 @@ footer .footer--contact .footer--container .footer--info h6 {
   justify-content: center;
   padding: 20px;
 }
+@media only screen and (min-width: 1000px) {
+  .founder {
+    max-width: 370px;
+    box-shadow: 0px 14px 24px rgba(190, 173, 142, 0.27);
+    margin: 0 auto;
+  }
+}
 .founder img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
+  position: relative;
 }
 .founder h3 {
   font-family: "Old Standard TT";
@@ -2023,9 +2213,38 @@ footer .footer--contact .footer--container .footer--info h6 {
   text-align: center;
   color: #777777;
 }
+.founder .ceo {
+  position: absolute;
+  position: relative;
+  right: -15%;
+  top: -480px;
+}
+.founder .ceo .circle {
+  width: 46px;
+  height: 46px;
+}
+.founder .ceo .tick {
+  position: absolute;
+  right: 35%;
+  top: 30%;
+  width: 16px;
+  height: 16px;
+  z-index: 1;
+}
 
 .cancelation {
   padding: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .cancelation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
 .cancelation h1 {
   font-family: "Old Standard TT";
@@ -2519,4 +2738,228 @@ footer .footer--contact .footer--container .footer--info h6 {
     text-align: right;
     color: #BDBDBD;
   }
+}
+
+.related--swiper {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.related--swiper h1 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 30px;
+  color: #222222;
+  border-bottom: 1px solid #F1F1F1;
+  margin-top: 60px;
+  margin-bottom: 46px;
+}
+.related--swiper h3 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  color: #BDAC8D;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+.related--swiper h2 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+}
+.related--swiper .relatedSwiper {
+  margin-bottom: 48px;
+}
+@media only screen and (min-width: 1000px) {
+  .related--swiper .relatedSwiper {
+    display: none;
+  }
+}
+.related--swiper .related--detail {
+  padding-bottom: 28px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .related--swiper .related--detail {
+    max-width: 370px;
+    margin: 10px;
+  }
+}
+.related--swiper .related--detail .related-container {
+  position: relative;
+}
+.related--swiper .related--detail .related-container .related--detail--icons {
+  height: 40px;
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  bottom: -5px;
+  right: 12px;
+  background: #ffffff;
+}
+.related--swiper .related--detail .related-container .related--detail--icons img {
+  width: 12px;
+  height: 8.18px;
+}
+.related--swiper .related--detail h3 {
+  font-family: "Old Standard TT";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.72px;
+  color: #222222;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+.related--swiper .related--detail p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #777777;
+  margin-bottom: 10px;
+}
+.related--swiper .related--detail .room--price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.related--swiper .related--detail .room--price h4 {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: right;
+  color: #BEAD8E;
+  margin-right: 19px;
+}
+.related--swiper .related--detail .room--price span {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: right;
+  color: #BDBDBD;
+}
+
+.related {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .related {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 120px;
+  }
+  .related .related--detail {
+    max-width: 370px;
+    margin: 10px;
+  }
+  .related .related--detail .related-container {
+    position: relative;
+  }
+  .related .related--detail .related-container .related--detail--icons {
+    height: 40px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: -5px;
+    right: 12px;
+    background: #ffffff;
+  }
+  .related .related--detail .related-container .related--detail--icons img {
+    width: 12px;
+    height: 8.18px;
+  }
+  .related .related--detail h3 {
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.72px;
+    color: #222222;
+    margin-top: 48px;
+    margin-bottom: 16px;
+  }
+  .related .related--detail p {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #777777;
+    margin-bottom: 10px;
+  }
+  .related .related--detail .room--price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .related .related--detail .room--price h4 {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: right;
+    color: #BEAD8E;
+    margin-right: 19px;
+  }
+  .related .related--detail .room--price span {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: right;
+    color: #BDBDBD;
+  }
+}
+
+.vid {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.vid video {
+  width: 100%;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
