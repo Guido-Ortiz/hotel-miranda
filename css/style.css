@@ -18,11 +18,13 @@ body {
 
 nav {
   height: 70px;
-  width: 99.5vw;
+  width: 100vw;
   background: #ffffff;
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: fixed;
+  z-index: 2;
 }
 nav a {
   text-decoration: none;
@@ -158,6 +160,7 @@ header p {
   letter-spacing: 2.8px;
   color: #FFFFFF;
   text-transform: uppercase;
+  padding-top: 65px;
 }
 header h1 {
   font-family: "Old Standard TT";
@@ -465,25 +468,16 @@ header .btn--dark {
   letter-spacing: -1.2px;
   color: #222222;
   margin-bottom: 24px;
+  text-transform: capitalize;
 }
 
 .mySwip {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-left: 20px;
   margin: 0 auto;
-}
-
-.slider {
-  border: 1px solid slateblue;
-}
-@media only screen and (min-width: 1000px) {
-  .slider {
-    border: 1px solid navy;
-  }
 }
 
 .item {
@@ -503,7 +497,7 @@ header .btn--dark {
   justify-content: space-evenly;
   position: absolute;
   top: -5px;
-  left: 0%;
+  left: 7%;
 }
 .item .room--icons img {
   width: 12px;
@@ -658,7 +652,6 @@ header .btn--dark {
 }
 
 .facilities {
-  border: 1px solid red;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -692,6 +685,7 @@ header .btn--dark {
   padding: 20px;
   margin-top: 24px;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 .facilities .facilities--item {
   display: flex;
@@ -709,6 +703,15 @@ header .btn--dark {
   font-size: 120px;
   line-height: 130px;
   color: rgba(34, 34, 34, 0.04);
+}
+.facilities .facilities--item p {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  margin: 28px 0;
 }
 .facilities .facilities--item img {
   padding: 5px;
