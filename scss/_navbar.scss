@@ -6,17 +6,22 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: fixed;
-    z-index: 2;
+    // position: fixed;
+    top: 0;
+    z-index: 1;
+
+    
+
+    @media only screen and (min-width: 1000px) {
+        // border: 1px solid fuchsia;
+        width: 100vw;
+        position: relative;
+        background: $background-arrival;
+    }
 
     a {
         text-decoration: none;
         color: inherit;
-    }
-
-    @media only screen and (min-width: 1000px) {
-        position: relative;
-        background: $background-arrival;
     }
 
     .close {
@@ -99,8 +104,13 @@ nav {
 }
 
 .menu--mobile {
-    // border: 1px solid fuchsia;
+    border: 1px solid fuchsia;
     display: none;
+    position: absolute;
+    // top: 70px;
+    z-index: 2;
+    background-color: #FFFFFF;
+    width: 100vw;
 
     .menu--item {
         font-family: 'Archivo';
