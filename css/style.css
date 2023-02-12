@@ -132,6 +132,10 @@ nav .navbar--icons .group {
   }
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
   background: #333333;
   display: flex;
@@ -263,6 +267,9 @@ header .btn--dark {
   cursor: pointer;
   color: #BEAD8E;
   filter: invert(0.9);
+}
+.arrival a {
+  text-decoration: none;
 }
 .arrival button {
   width: 250px;
