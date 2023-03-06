@@ -3,18 +3,18 @@ const swiper = new Swiper('.swiper', {
     direction: 'vertical',
     loop: true,
   
-    // If we need pagination
+    //pagination
     pagination: {
       el: '.swiper-pagination',
     },
   
-    // Navigation arrows
+    // arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   
-    // And if we need scrollbar
+    // scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
     },
