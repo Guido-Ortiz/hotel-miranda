@@ -734,11 +734,13 @@ header .btn--dark {
 }
 @media only screen and (min-width: 1000px) {
   .facilities .facilities--container {
+    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    display: none;
   }
   .facilities .facilities--container .facilities--item {
     width: 30%;
@@ -775,6 +777,36 @@ header .btn--dark {
     font-size: 120px;
     line-height: 130px;
     color: rgba(34, 34, 34, 0.04);
+  }
+}
+
+.fac {
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .fac {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .fac h3 {
+    font-family: "Old Standard TT";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.9px;
+    color: #222222;
+    margin: 30px 0;
+  }
+  .fac p {
+    font-family: "Archivo";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #777777;
+    margin-bottom: 10px;
   }
 }
 
