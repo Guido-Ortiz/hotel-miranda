@@ -8,11 +8,28 @@
     align-items: center;
     background: $background-arrival;
 
+    @media only screen and (min-width: 1000px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
     div {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
+        @media only screen and (min-width: 1000px){
+            height: 300px;
+            margin: 0 10px;
+
+            // img {
+            //     width: 100px;
+            //     height: 100px;
+            // }
+        }
     }
 
     h2 {
@@ -27,7 +44,6 @@
 
     h5 {
         color: $primary;
-        // margin-bottom: 60px;
         text-transform: capitalize;
     }
 
